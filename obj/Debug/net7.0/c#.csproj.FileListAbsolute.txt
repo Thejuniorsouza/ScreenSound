@@ -1,0 +1,14 @@
+/Users/juniorsouza/Documents/Projetos/c#/bin/Debug/net7.0/c#
+/Users/juniorsouza/Documents/Projetos/c#/bin/Debug/net7.0/c#.deps.json
+/Users/juniorsouza/Documents/Projetos/c#/bin/Debug/net7.0/c#.runtimeconfig.json
+/Users/juniorsouza/Documents/Projetos/c#/bin/Debug/net7.0/c#.dll
+/Users/juniorsouza/Documents/Projetos/c#/bin/Debug/net7.0/c#.pdb
+/Users/juniorsouza/Documents/Projetos/c#/obj/Debug/net7.0/c#.GeneratedMSBuildEditorConfig.editorconfig
+/Users/juniorsouza/Documents/Projetos/c#/obj/Debug/net7.0/c#.AssemblyInfoInputs.cache
+/Users/juniorsouza/Documents/Projetos/c#/obj/Debug/net7.0/c#.AssemblyInfo.cs
+/Users/juniorsouza/Documents/Projetos/c#/obj/Debug/net7.0/c#.csproj.CoreCompileInputs.cache
+/Users/juniorsouza/Documents/Projetos/c#/obj/Debug/net7.0/c#.dll
+/Users/juniorsouza/Documents/Projetos/c#/obj/Debug/net7.0/refint/c#.dll
+/Users/juniorsouza/Documents/Projetos/c#/obj/Debug/net7.0/c#.pdb
+/Users/juniorsouza/Documents/Projetos/c#/obj/Debug/net7.0/c#.genruntimeconfig.cache
+/Users/juniorsouza/Documents/Projetos/c#/obj/Debug/net7.0/ref/c#.dll
