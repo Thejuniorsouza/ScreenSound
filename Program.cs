@@ -3,7 +3,7 @@
 // List<string> listaDasBandas = new List<string>{"U2", "The Beatles", "Aerosmith"};
 
 Dictionary<string, List<int>> bandasRegistradas = new Dictionary<string, List<int>>();
-bandasRegistradas.Add("Link Park", new List<int> {10, 9, 6});
+bandasRegistradas.Add("Linkin Park", new List<int> {10, 9, 6});
 bandasRegistradas.Add("The Beatles", new List<int>());
 
 
@@ -41,7 +41,7 @@ void ExibirOpcoesDoMenu()
         break;
     case 3 : AvaliarUmaBanda(); 
         break;
-    case 4 : Console.WriteLine("Você escolheu a opção " + opcaoEscolhidaNumerica); 
+    case 4 : ExibirMedia(); 
         break;
     case -1 : Console.WriteLine("Você escolheu a opção " + opcaoEscolhidaNumerica); 
         break;
@@ -94,14 +94,14 @@ void AvaliarUmaBanda()
 {
     Console.Clear();
     ExibirTituloDaOpcao("Avaliar banda");
-    Console.Write("Digite o nome da banda que deseja avaliar");
+    Console.Write("Digite o nome da banda que deseja avaliar: ");
     string nomeDaBanda = Console.ReadLine()!; // A interrogação é para forçar a receber apenas uma string
     if (bandasRegistradas.ContainsKey(nomeDaBanda))
     {
         Console.Write($"Qual a nota que a banda {nomeDaBanda} merece:");
         int nota = int.Parse(Console.ReadLine()!);
         bandasRegistradas[nomeDaBanda].Add(nota); //o [] foi usado para indexar o produto da lista e depois o .Add para adicionar a nota naquele elemento específico.
-        Console.WriteLine($"\nA nota {nota} foi registrada com sucesso");
+        Console.WriteLine($"\nA nota {nota} foi registrada com sucesso: ");
         Thread.Sleep(4000);
         Console.Clear();
         ExibirOpcoesDoMenu();
@@ -114,6 +114,32 @@ void AvaliarUmaBanda()
         ExibirOpcoesDoMenu();
 
     }
+    }
+
+    void ExibirMedia() {
+        Console.Clear();
+        ExibirTituloDaOpcao("Média da banda");
+        Console.WriteLine("Digite de qual banda você deseja saber a média: ");
+        string nomeDaBanda = Console.ReadLine()!;
+        if (bandasRegistradas.ContainsKey(nomeDaBanda))
+        {
+        double mediaDaBanda = bandasRegistradas[nomeDaBanda].Average();
+        Console.WriteLine($"A média da banda que {nomeDaBanda} é {mediaDaBanda}");
+        Console.WriteLine("Digite uma tecla para voltar para o menu inicial");
+        Console.ReadKey();
+        Console.Clear();
+        ExibirOpcoesDoMenu();
+
+        } else 
+        {
+            Console.WriteLine($"\nA banda {nomeDaBanda} não foi encontrada" );
+            Console.WriteLine("Digite alguma tecla para voltar para o menu inicial");
+            Console.ReadKey();
+            Console.Clear();
+            ExibirOpcoesDoMenu();
+        }
+
+    
 }
 
 ExibirOpcoesDoMenu();
